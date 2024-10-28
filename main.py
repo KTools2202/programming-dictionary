@@ -93,7 +93,7 @@ def main():
         print(f"3. {menu['options']['category_lookup']}")
         print(f"4. {menu['options']['exit']}")
 
-        choice = input(f"\n{menu['prompts']['choice']}")
+        choice = input(f"\n{menu['prompts']['choice']}").strip()
 
         if choice == '1':
             term = input(menu['prompts']['term_lookup'])
@@ -110,8 +110,8 @@ def main():
                 print(menu['messages']['term_not_found'])
 
         elif choice == '2':
-            term = input(menu['prompts']['term_add'])
-            definition = input(menu['prompts']['definition'])
+            term = input(menu['prompts']['term_add']).strip()
+            definition = input(menu['prompts']['definition']).strip()
 
             # Show available categories
             print("\nAvailable categories:")
@@ -120,7 +120,7 @@ def main():
 
             categories = []
             while True:
-                category_input = input(menu['prompts']['categories'])
+                category_input = input(menu['prompts']['categories']).strip()
                 if not category_input:
                     break
 
@@ -142,8 +142,8 @@ def main():
                     break
                 print("Please enter at least one valid category!")
 
-            examples = input(menu['prompts']['examples'])
-            search_queries = input(menu['prompts']['search_queries'])
+            examples = input(menu['prompts']['examples']).strip()
+            search_queries = input(menu['prompts']['search_queries']).strip()
 
             examples = [e.strip() for e in examples.split(',')] if examples else []
             search_queries = [q.strip()
@@ -159,7 +159,7 @@ def main():
             for i, category in enumerate(dictionary.categories, 1):
                 print(f"{i}. {category}")
 
-            category_choice = input(menu['prompts']['category_lookup'])
+            category_choice = input(menu['prompts']['category_lookup']).strip()
             try:
                 category_index = int(category_choice) - 1
                 if 0 <= category_index < len(dictionary.categories):
