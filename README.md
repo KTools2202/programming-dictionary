@@ -1,10 +1,10 @@
 # Programming Dictionary
 
-![Made in Python badge](./docs/badges/made-in-python.svg)
+![Made in Python badge](./images/badges/made-in-python.svg)
 
-![Works on Windows badge](./docs/badges/works-on-windows-cozy.svg)
-![Works on Mac badge](./docs/badges/works-on-mac-cozy.svg)
-![Works on Linux badge](./docs/badges/works-on-linux-cozy.svg)
+![Works on Windows badge](./images/badges/works-on-windows-cozy.svg)
+![Works on Mac badge](./images/badges/works-on-mac-cozy.svg)
+![Works on Linux badge](./images/badges/works-on-linux-cozy.svg)
 
 [Image credits](./image-credits.md)
 
