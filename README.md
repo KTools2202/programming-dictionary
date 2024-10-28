@@ -1,4 +1,4 @@
-# PythonTemplateRepo
+# Programming Dictionary
 
 ![Made in Python badge](./docs/badges/made-in-python.svg)
 
@@ -8,14 +8,16 @@
 
 [Image credits](./image-credits.md)
 
-This is a basic README template. Feel free to customise it to your liking.
+This is a programming-focused dictionary app written in Python for newcomers.
 
 ## Features
 
-- Feature 1
-- Feature 2
+Please note that this is still in development phase. As such, this feature list may be incorrect or incomplete at times.
 
-[See the documentation](../docs/) for more.
+### Current
+
+- Related search term matching
+- Addition to your dictionary
 
 ## Options to run
 
@@ -31,7 +33,7 @@ To run the program from source, you'll need to have the following prerequisites:
 - Clone this repository using:
 
 ```bash
-git clone https://github.com/{username}/{repo}
+git clone https://github.com/KTools2202/programming-dictionary
 ```
 
 - Then, setup a virtual environment:
@@ -47,8 +49,6 @@ pip install -r requirements.txt
 ```bash
 # Running the program itself
 python main.py
-# Viewing the MkDocs site
-mkdocs serve
 # Freezing the application
 pyinstaller --onefile main.py
 ```

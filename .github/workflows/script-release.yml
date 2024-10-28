@@ -38,7 +38,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: PyInstaller
-        run: pyinstaller --onefile --windowed main.py --name ${{ github.repository }}_${{ github.ref_name }}_${{ matrix.os }}
+        run: pyinstaller --onefile --windowed main.py --name ProgrammingDictionary-${{ matrix.os }}
 
       - name: List dist directory
         run: ls -R dist
@@ -46,9 +46,17 @@ jobs:
       - name: Tar files on Linux
         if: ${{ matrix.runner_os == 'ubuntu-latest' }}
         run: |
-            chmod +x dist/${{ github.repository }}_${{ github.ref_name }}_${{ matrix.os }}
-            tar -czvf dist/${{ github.repository }}_${{ github.ref_name }}_${{ matrix.os }}.tar.gz dist/${{ github.repository }}_${{ github.ref_name }}_${{ matrix.os }}
-            rm -rf dist/${{ github.repository }}_${{ github.ref_name }}_${{ matrix.os }}
+            chmod +x dist/ProgrammingDictionary@${{ github.ref_name }}_${{ matrix.os }}
+            tar -czvf dist/ProgrammingDictionary@${{ github.ref_name }}_${{ matrix.os }}.tar.gz dist/ProgrammingDictionary-${{ matrix.os }}
+            rm -rf dist/ProgrammingDictionary@${{ github.ref_name }}_${{ matrix.os }}
+      
+      - name: Zip folder on Mac
+        if: ${{ matrix.runner_os == 'macos-latest' }}
+        run: |
+          zip -r ProgrammingDictionary@${{ github.ref_name }}_${{ matrix.os }}.zip dist/
+          rm -rf dist/
+          mkdir dist/
+          mv ProgrammingDictionary@${{ github.ref_name }}_${{ matrix.os }}.zip dist/
 
       - name: Upload debug builds
         uses: actions/upload-artifact@v4
@@ -82,7 +90,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           generateReleaseNotes: true
           tag: ${{ github.ref_name }}
-          artifacts: 
+          artifacts: "ProgrammingDictionary@*"
           draft: true
-          name: "${{ github.repository }}_${{ github.ref_name }}_*"
-          body: "Need help? Refer to the documentation site."
+          name: "Programming Dictionary {{ github.ref_name }}*"

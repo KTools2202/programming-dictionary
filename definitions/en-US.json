@@ -1,0 +1,104 @@
+{
+    "menu": {
+        "welcome": "Welcome to the Programming Dictionary!",
+        "title": "Programmer's Dictionary",
+        "options": {
+            "lookup": "Look up a term",
+            "add": "Add a new term",
+            "category_lookup": "Look up by category",
+            "exit": "Exit"
+        },
+        "prompts": {
+            "choice": "Enter your choice (1-3): ",
+            "term_lookup": "Enter the term to look up: ",
+            "term_add": "Enter the new term: ",
+            "definition": "Enter the definition: ",
+            "category": "Enter the category: ",
+            "examples": "Enter examples (comma-separated) or press Enter to skip: ",
+            "search_queries": "Enter search queries (comma-separated) or press Enter to skip: ",
+            "categories": "Enter category numbers or names (comma-separated): ",
+            "category_lookup": "Enter category number or name: "
+        },
+        "messages": {
+            "term_not_found": "Term not found!",
+            "term_added": "Term added successfully!",
+            "invalid_choice": "Invalid choice! Please try again.",
+            "goodbye": "Goodbye!",
+            "no_terms_in_category": "No terms found in this category."
+        },
+        "labels": {
+            "definition": "Definition",
+            "category": "Category",
+            "examples": "Examples",
+            "search_queries": "Search queries"
+        }
+    },
+    "terms": {
+        "API": {
+            "definition": "Application Programming Interface - a set of rules and protocols that allows different software applications to communicate with each other",
+            "categories": ["interfaces", "software_development"],
+            "examples": ["REST API", "Web API", "Library API"],
+            "search_queries": ["Application Programming Interface", "APIs", "Programming Interface", "API"]
+        },
+        "OOP": {
+            "definition": "Object-Oriented Programming - a programming paradigm based on the concept of objects, which can contain data and code",
+            "category": "programming_paradigm",
+            "examples": ["Classes", "Inheritance", "Encapsulation"],
+            "search_queries": ["Object Oriented", "Object-Oriented", "Object Oriented Programming", "OOPs", "OOP", "Object-Oriented Programming"]
+        },
+        "GUI": {
+            "definition": "Graphical User Interface - a visual way to interact with a computer using items like windows, icons, and buttons",
+            "category": "interfaces",
+            "examples": ["Windows", "MacOS", "Android"],
+            "search_queries": ["Graphical Interface", "User Interface", "GUI"]
+        },
+        "Algorithm": {
+            "definition": "A sequence of instructions or steps designed to perform a specific task or solve a problem",
+            "category": "computational_theory",
+            "examples": ["Sorting algorithms", "Search algorithms", "Pathfinding algorithms"],
+            "search_queries": ["Algorithm", "Algorithmic process", "Problem-solving steps"]
+        },
+        "Framework": {
+            "definition": "A platform or foundation used to develop applications, providing a standard way to build and deploy software",
+            "category": "software_tools",
+            "examples": ["Django", "React", "Spring"],
+            "search_queries": ["Software Framework", "Development Framework", "Programming Framework"]
+        },
+        "IDE": {
+            "definition": "Integrated Development Environment - a software application that provides comprehensive tools for software development",
+            "category": "software_tools",
+            "examples": ["Visual Studio Code", "PyCharm", "IntelliJ IDEA"],
+            "search_queries": ["IDE", "Coding environment", "Development tools"]
+        },
+        "Recursion": {
+            "definition": "A programming technique where a function calls itself to solve a problem by breaking it down into smaller, more manageable parts",
+            "category": "programming_techniques",
+            "examples": ["Factorial calculation", "Fibonacci sequence", "QuickSort"],
+            "search_queries": ["Recursive function", "Recursion", "Self-calling function"]
+        },
+        "Database": {
+            "definition": "An organized collection of data, generally stored and accessed electronically from a computer system",
+            "category": "data_management",
+            "examples": ["MySQL", "PostgreSQL", "MongoDB"],
+            "search_queries": ["Database", "Data storage", "Database management"]
+        },
+        "Library": {
+            "definition": "A collection of precompiled routines or functions that programmers can use to optimize their code",
+            "category": "software_tools",
+            "examples": ["NumPy", "Pandas", "Lodash"],
+            "search_queries": ["Programming library", "Code library", "Reusable functions"]
+        },
+        "Compiler": {
+            "definition": "A tool that converts code written in a high-level programming language into machine code that can be executed by a computer",
+            "category": "software_tools",
+            "examples": ["GCC", "Clang", "Javac"],
+            "search_queries": ["Code compiler", "Programming compiler", "Compile code"]
+        },
+        "Lambda": {
+            "definition": "An anonymous function in programming, often used as a quick and temporary way to write small functions",
+            "category": "programming_techniques",
+            "examples": ["Python lambda", "JavaScript arrow functions"],
+            "search_queries": ["Lambda function", "Anonymous function", "Temporary function"]
+        }
+    }
+}
